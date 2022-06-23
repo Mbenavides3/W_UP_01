@@ -67,6 +67,8 @@ The minimum, median, maximum, and the quartiles from the skill players are all s
 t.test(pushups~position,data=mydata)
 ```
 
+The p-value for the text indicates that the change of the two sets of data being identical is nearly impossible, showing that there is a true difference between the skill and the line players.  
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason. Watch the chapter 6 videos from the George Town videos collection.!-->
