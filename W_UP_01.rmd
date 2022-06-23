@@ -73,3 +73,5 @@ The p-value for the text indicates that the change of the two sets of data being
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason. Watch the chapter 6 videos from the George Town videos collection.!-->
 
+The data shows that there is a clear difference between the amount of pushups that skill and line players are able to do. The difference shows in the boxplot, the numerical results, and the inferential results. 
+
