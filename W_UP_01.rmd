@@ -2,22 +2,27 @@
 title: "W_UP_01"
 author: "Michelle Benavides"
 date: "May 24, 2022"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 
 
 The report structure should include five sections.  see below
 
-
-
+```{r include=FALSE, echo=FALSE}
+require(tidyverse)
+require(tigerstats)
+mydata <- read.csv(file= "pushups.csv")
+```
 
 
 # Introduction
 
 <!--In this section you explain what you are trying to show. Where did the data come from? What is the research or other question you are trying to answer?!-->
 
-Create an Rstudio project in your shared space on rstudio.cloud.  Using the dataset called pushups from the tigerstats package in R; answer the question posed by this null and alternate hypothesis in an html markdown document.
+Create an Rstudio project in your shared space on rstudio.cloud.  Using the data set called pushups from the tigerstats package in R; answer the question posed by this null and alternate hypothesis in an html markdown document.
 
 $H_0$: There is no difference between the average number of pushups of line vs skill players
 
@@ -41,6 +46,9 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 boxplot(pushups~position,data=mydata)
 ```
 
+  
+It seems as though the median number of pushups that the Skill players do is far higher than the line players. There is an outlier in the skills players that can do many more push ups than the others.  
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -59,5 +67,5 @@ t.test(pushups~position,data=mydata)
 
 # Discussion and Conclusion
 
-<!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+<!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason. Watch the chapter 6 videos from the George Town videos collection.!-->
 
